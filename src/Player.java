@@ -12,4 +12,8 @@ class Player {
     String getFullName() {
         return this.name + " " + this.username;
     }
+
+    int getPoints() {
+        return this.points;
+    }
 }

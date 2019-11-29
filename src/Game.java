@@ -6,4 +6,15 @@ class Game {
         this.name = name;
         this.players = players;
     }
+
+    String winner() {
+        for (Player player : players) {
+            System.out.println(player.getFullName() + " ma " + player.getPoints() + " pkt.");
+            if (player.getPoints() >= 100) {
+                return player.getFullName();
+            }
+        }
+        return "Nikt bie wygrał";
+    }
 }
+
